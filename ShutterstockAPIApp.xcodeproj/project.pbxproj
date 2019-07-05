@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1362111E22CF2537001081CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362111D22CF2537001081CA /* AppDelegate.swift */; };
+		1362112022CF2537001081CA /* SearchImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362111F22CF2537001081CA /* SearchImageViewController.swift */; };
+		1362112322CF2537001081CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1362112122CF2537001081CA /* Main.storyboard */; };
+		1362112522CF2539001081CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1362112422CF2539001081CA /* Assets.xcassets */; };
+		1362112822CF2539001081CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1362112622CF2539001081CA /* LaunchScreen.storyboard */; };
+		1362113322CF2539001081CA /* ShutterstockAPIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362113222CF2539001081CA /* ShutterstockAPIAppTests.swift */; };
+		1362113E22CF2539001081CA /* ShutterstockAPIAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362113D22CF2539001081CA /* ShutterstockAPIAppUITests.swift */; };
+		1362114D22CF266E001081CA /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362114C22CF266E001081CA /* HttpRouter.swift */; };
+		1362115122CF2681001081CA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362114E22CF2681001081CA /* NetworkManager.swift */; };
+		1362115222CF2681001081CA /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362114F22CF2681001081CA /* ReachabilityManager.swift */; };
+		1362115322CF2681001081CA /* RequestLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362115022CF2681001081CA /* RequestLogger.swift */; };
+		1362115522CF2906001081CA /* HTTPStatusCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362115422CF2906001081CA /* HTTPStatusCodes.swift */; };
+		1362116522CF2D10001081CA /* SearchImageDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362115B22CF2D10001081CA /* SearchImageDetails.swift */; };
+		1362116922CF2D10001081CA /* PhotosDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362115F22CF2D10001081CA /* PhotosDetails.swift */; };
+		1362116B22CF2D10001081CA /* ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362116122CF2D10001081CA /* ImageAssets.swift */; };
+		1362116D22CF2D10001081CA /* ImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362116322CF2D10001081CA /* ImagePreview.swift */; };
+		1362117222CF3074001081CA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362117122CF3074001081CA /* Environment.swift */; };
+		1362117622CF3396001081CA /* SearchImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362117522CF3396001081CA /* SearchImageRepository.swift */; };
+		1362117822CF33A2001081CA /* SearchImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362117722CF33A2001081CA /* SearchImageDelegate.swift */; };
+		1362117A22CF33CD001081CA /* SearchImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362117922CF33CD001081CA /* SearchImagePresenter.swift */; };
+		1362118822CF62F9001081CA /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362118622CF62F9001081CA /* ImageCollectionViewCell.swift */; };
+		1362118922CF62F9001081CA /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1362118722CF62F9001081CA /* ImageCollectionViewCell.xib */; };
+		1362118D22CF687F001081CA /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362118A22CF687E001081CA /* PinterestLayout.swift */; };
+		1362118E22CF687F001081CA /* PinterestLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362118B22CF687F001081CA /* PinterestLayoutDelegate.swift */; };
+		1362118F22CF687F001081CA /* PinterestLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1362118C22CF687F001081CA /* PinterestLayoutAttributes.swift */; };
+		60362E74D2C75B5ADEF75E6A /* Pods_ShutterstockAPIAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC82D07124D5FBB795E36A0 /* Pods_ShutterstockAPIAppUITests.framework */; };
+		682F7B9F73C2813333370149 /* Pods_ShutterstockAPIApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B77ECA8D828A919C3A329A3 /* Pods_ShutterstockAPIApp.framework */; };
+		742CB54389B2D65057326196 /* Pods_ShutterstockAPIAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AA7DB238F06616328A688E /* Pods_ShutterstockAPIAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1362112F22CF2539001081CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1362111222CF2536001081CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1362111922CF2536001081CA;
+			remoteInfo = ShutterstockAPIApp;
+		};
+		1362113A22CF2539001081CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1362111222CF2536001081CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1362111922CF2536001081CA;
+			remoteInfo = ShutterstockAPIApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056AE5CFF3AEE6F7D15E1C7A /* Pods-ShutterstockAPIApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShutterstockAPIApp.release.xcconfig"; path = "Target Support Files/Pods-ShutterstockAPIApp/Pods-ShutterstockAPIApp.release.xcconfig"; sourceTree = "<group>"; };
+		0B77ECA8D828A919C3A329A3 /* Pods_ShutterstockAPIApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShutterstockAPIApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1362111A22CF2537001081CA /* ShutterstockAPIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShutterstockAPIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1362111D22CF2537001081CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1362111F22CF2537001081CA /* SearchImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageViewController.swift; sourceTree = "<group>"; };
+		1362112222CF2537001081CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1362112422CF2539001081CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1362112722CF2539001081CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1362112922CF2539001081CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1362112E22CF2539001081CA /* ShutterstockAPIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShutterstockAPIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1362113222CF2539001081CA /* ShutterstockAPIAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterstockAPIAppTests.swift; sourceTree = "<group>"; };
+		1362113422CF2539001081CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1362113922CF2539001081CA /* ShutterstockAPIAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShutterstockAPIAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1362113D22CF2539001081CA /* ShutterstockAPIAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterstockAPIAppUITests.swift; sourceTree = "<group>"; };
+		1362113F22CF2539001081CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1362114C22CF266E001081CA /* HttpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		1362114E22CF2681001081CA /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1362114F22CF2681001081CA /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		1362115022CF2681001081CA /* RequestLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLogger.swift; sourceTree = "<group>"; };
+		1362115422CF2906001081CA /* HTTPStatusCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCodes.swift; sourceTree = "<group>"; };
+		1362115B22CF2D10001081CA /* SearchImageDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchImageDetails.swift; sourceTree = "<group>"; };
+		1362115F22CF2D10001081CA /* PhotosDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosDetails.swift; sourceTree = "<group>"; };
+		1362116122CF2D10001081CA /* ImageAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAssets.swift; sourceTree = "<group>"; };
+		1362116322CF2D10001081CA /* ImagePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreview.swift; sourceTree = "<group>"; };
+		1362117122CF3074001081CA /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1362117522CF3396001081CA /* SearchImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageRepository.swift; sourceTree = "<group>"; };
+		1362117722CF33A2001081CA /* SearchImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageDelegate.swift; sourceTree = "<group>"; };
+		1362117922CF33CD001081CA /* SearchImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImagePresenter.swift; sourceTree = "<group>"; };
+		1362118622CF62F9001081CA /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		1362118722CF62F9001081CA /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		1362118A22CF687E001081CA /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = "../../../../../../Downloads/PinterestLayout-master/PinterestLayout/PinterestLayout.swift"; sourceTree = "<group>"; };
+		1362118B22CF687F001081CA /* PinterestLayoutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayoutDelegate.swift; sourceTree = "<group>"; };
+		1362118C22CF687F001081CA /* PinterestLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayoutAttributes.swift; sourceTree = "<group>"; };
+		20271476D80E60B7DDD10698 /* Pods-ShutterstockAPIAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShutterstockAPIAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ShutterstockAPIAppUITests/Pods-ShutterstockAPIAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		28891CCFEE4DAFD195927D95 /* Pods-ShutterstockAPIAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShutterstockAPIAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ShutterstockAPIAppTests/Pods-ShutterstockAPIAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		34AA7DB238F06616328A688E /* Pods_ShutterstockAPIAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShutterstockAPIAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73E429DDD67F5413F7B917DF /* Pods-ShutterstockAPIAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShutterstockAPIAppTests.release.xcconfig"; path = "Target Support Files/Pods-ShutterstockAPIAppTests/Pods-ShutterstockAPIAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		82B8EDCBB15884BE82765003 /* Pods-ShutterstockAPIApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShutterstockAPIApp.debug.xcconfig"; path = "Target Support Files/Pods-ShutterstockAPIApp/Pods-ShutterstockAPIApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8DC82D07124D5FBB795E36A0 /* Pods_ShutterstockAPIAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShutterstockAPIAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74730C41ABF9CAA540607A6 /* Pods-ShutterstockAPIAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShutterstockAPIAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ShutterstockAPIAppUITests/Pods-ShutterstockAPIAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1362111722CF2536001081CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682F7B9F73C2813333370149 /* Pods_ShutterstockAPIApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1362112B22CF2539001081CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742CB54389B2D65057326196 /* Pods_ShutterstockAPIAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1362113622CF2539001081CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60362E74D2C75B5ADEF75E6A /* Pods_ShutterstockAPIAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1362111122CF2536001081CA = {
+			isa = PBXGroup;
+			children = (
+				1362111C22CF2537001081CA /* ShutterstockAPIApp */,
+				1362113122CF2539001081CA /* ShutterstockAPIAppTests */,
+				1362113C22CF2539001081CA /* ShutterstockAPIAppUITests */,
+				1362111B22CF2537001081CA /* Products */,
+				769BA61D6D48017DD58A398F /* Pods */,
+				C5562FBDFDC412404F770189 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1362111B22CF2537001081CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1362111A22CF2537001081CA /* ShutterstockAPIApp.app */,
+				1362112E22CF2539001081CA /* ShutterstockAPIAppTests.xctest */,
+				1362113922CF2539001081CA /* ShutterstockAPIAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1362111C22CF2537001081CA /* ShutterstockAPIApp */ = {
+			isa = PBXGroup;
+			children = (
+				1362118222CF6236001081CA /* Helper */,
+				1362115922CF2D03001081CA /* Model */,
+				1362114B22CF262D001081CA /* Network */,
+				1362117322CF333E001081CA /* Feature */,
+				1362111D22CF2537001081CA /* AppDelegate.swift */,
+				1362112122CF2537001081CA /* Main.storyboard */,
+				1362112422CF2539001081CA /* Assets.xcassets */,
+				1362112622CF2539001081CA /* LaunchScreen.storyboard */,
+				1362112922CF2539001081CA /* Info.plist */,
+			);
+			path = ShutterstockAPIApp;
+			sourceTree = "<group>";
+		};
+		1362113122CF2539001081CA /* ShutterstockAPIAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1362113222CF2539001081CA /* ShutterstockAPIAppTests.swift */,
+				1362113422CF2539001081CA /* Info.plist */,
+			);
+			path = ShutterstockAPIAppTests;
+			sourceTree = "<group>";
+		};
+		1362113C22CF2539001081CA /* ShutterstockAPIAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1362113D22CF2539001081CA /* ShutterstockAPIAppUITests.swift */,
+				1362113F22CF2539001081CA /* Info.plist */,
+			);
+			path = ShutterstockAPIAppUITests;
+			sourceTree = "<group>";
+		};
+		1362114B22CF262D001081CA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1362115422CF2906001081CA /* HTTPStatusCodes.swift */,
+				1362114C22CF266E001081CA /* HttpRouter.swift */,
+				1362114E22CF2681001081CA /* NetworkManager.swift */,
+				1362114F22CF2681001081CA /* ReachabilityManager.swift */,
+				1362115022CF2681001081CA /* RequestLogger.swift */,
+				1362117122CF3074001081CA /* Environment.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1362115922CF2D03001081CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1362116122CF2D10001081CA /* ImageAssets.swift */,
+				1362115F22CF2D10001081CA /* PhotosDetails.swift */,
+				1362115B22CF2D10001081CA /* SearchImageDetails.swift */,
+				1362116322CF2D10001081CA /* ImagePreview.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1362117322CF333E001081CA /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				1362117422CF3349001081CA /* SearchImage */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		1362117422CF3349001081CA /* SearchImage */ = {
+			isa = PBXGroup;
+			children = (
+				1362118522CF62E7001081CA /* UICollectionViewCell */,
+				1362117522CF3396001081CA /* SearchImageRepository.swift */,
+				1362117722CF33A2001081CA /* SearchImageDelegate.swift */,
+				1362117922CF33CD001081CA /* SearchImagePresenter.swift */,
+				1362111F22CF2537001081CA /* SearchImageViewController.swift */,
+			);
+			path = SearchImage;
+			sourceTree = "<group>";
+		};
+		1362118222CF6236001081CA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1362118A22CF687E001081CA /* PinterestLayout.swift */,
+				1362118C22CF687F001081CA /* PinterestLayoutAttributes.swift */,
+				1362118B22CF687F001081CA /* PinterestLayoutDelegate.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1362118522CF62E7001081CA /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1362118622CF62F9001081CA /* ImageCollectionViewCell.swift */,
+				1362118722CF62F9001081CA /* ImageCollectionViewCell.xib */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		769BA61D6D48017DD58A398F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82B8EDCBB15884BE82765003 /* Pods-ShutterstockAPIApp.debug.xcconfig */,
+				056AE5CFF3AEE6F7D15E1C7A /* Pods-ShutterstockAPIApp.release.xcconfig */,
+				28891CCFEE4DAFD195927D95 /* Pods-ShutterstockAPIAppTests.debug.xcconfig */,
+				73E429DDD67F5413F7B917DF /* Pods-ShutterstockAPIAppTests.release.xcconfig */,
+				A74730C41ABF9CAA540607A6 /* Pods-ShutterstockAPIAppUITests.debug.xcconfig */,
+				20271476D80E60B7DDD10698 /* Pods-ShutterstockAPIAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5562FBDFDC412404F770189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B77ECA8D828A919C3A329A3 /* Pods_ShutterstockAPIApp.framework */,
+				34AA7DB238F06616328A688E /* Pods_ShutterstockAPIAppTests.framework */,
+				8DC82D07124D5FBB795E36A0 /* Pods_ShutterstockAPIAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1362111922CF2536001081CA /* ShutterstockAPIApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1362114222CF2539001081CA /* Build configuration list for PBXNativeTarget "ShutterstockAPIApp" */;
+			buildPhases = (
+				CBC2C675D6B8A65C51F07575 /* [CP] Check Pods Manifest.lock */,
+				1362111622CF2536001081CA /* Sources */,
+				1362111722CF2536001081CA /* Frameworks */,
+				1362111822CF2536001081CA /* Resources */,
+				746C55F81485241AE51D53EE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShutterstockAPIApp;
+			productName = ShutterstockAPIApp;
+			productReference = 1362111A22CF2537001081CA /* ShutterstockAPIApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1362112D22CF2539001081CA /* ShutterstockAPIAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1362114522CF2539001081CA /* Build configuration list for PBXNativeTarget "ShutterstockAPIAppTests" */;
+			buildPhases = (
+				14E2040F23101A8F230B31FD /* [CP] Check Pods Manifest.lock */,
+				1362112A22CF2539001081CA /* Sources */,
+				1362112B22CF2539001081CA /* Frameworks */,
+				1362112C22CF2539001081CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1362113022CF2539001081CA /* PBXTargetDependency */,
+			);
+			name = ShutterstockAPIAppTests;
+			productName = ShutterstockAPIAppTests;
+			productReference = 1362112E22CF2539001081CA /* ShutterstockAPIAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1362113822CF2539001081CA /* ShutterstockAPIAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1362114822CF2539001081CA /* Build configuration list for PBXNativeTarget "ShutterstockAPIAppUITests" */;
+			buildPhases = (
+				C5A23725126BB5943D51CCAF /* [CP] Check Pods Manifest.lock */,
+				1362113522CF2539001081CA /* Sources */,
+				1362113622CF2539001081CA /* Frameworks */,
+				1362113722CF2539001081CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1362113B22CF2539001081CA /* PBXTargetDependency */,
+			);
+			name = ShutterstockAPIAppUITests;
+			productName = ShutterstockAPIAppUITests;
+			productReference = 1362113922CF2539001081CA /* ShutterstockAPIAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1362111222CF2536001081CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = nishant;
+				TargetAttributes = {
+					1362111922CF2536001081CA = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					1362112D22CF2539001081CA = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 1362111922CF2536001081CA;
+					};
+					1362113822CF2539001081CA = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 1362111922CF2536001081CA;
+					};
+				};
+			};
+			buildConfigurationList = 1362111522CF2536001081CA /* Build configuration list for PBXProject "ShutterstockAPIApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1362111122CF2536001081CA;
+			productRefGroup = 1362111B22CF2537001081CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1362111922CF2536001081CA /* ShutterstockAPIApp */,
+				1362112D22CF2539001081CA /* ShutterstockAPIAppTests */,
+				1362113822CF2539001081CA /* ShutterstockAPIAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1362111822CF2536001081CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1362112822CF2539001081CA /* LaunchScreen.storyboard in Resources */,
+				1362112522CF2539001081CA /* Assets.xcassets in Resources */,
+				1362112322CF2537001081CA /* Main.storyboard in Resources */,
+				1362118922CF62F9001081CA /* ImageCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1362112C22CF2539001081CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1362113722CF2539001081CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14E2040F23101A8F230B31FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShutterstockAPIAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		746C55F81485241AE51D53EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShutterstockAPIApp/Pods-ShutterstockAPIApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShutterstockAPIApp/Pods-ShutterstockAPIApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShutterstockAPIApp/Pods-ShutterstockAPIApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A23725126BB5943D51CCAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShutterstockAPIAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBC2C675D6B8A65C51F07575 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShutterstockAPIApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1362111622CF2536001081CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1362115522CF2906001081CA /* HTTPStatusCodes.swift in Sources */,
+				1362117A22CF33CD001081CA /* SearchImagePresenter.swift in Sources */,
+				1362118822CF62F9001081CA /* ImageCollectionViewCell.swift in Sources */,
+				1362115122CF2681001081CA /* NetworkManager.swift in Sources */,
+				1362112022CF2537001081CA /* SearchImageViewController.swift in Sources */,
+				1362117222CF3074001081CA /* Environment.swift in Sources */,
+				1362116522CF2D10001081CA /* SearchImageDetails.swift in Sources */,
+				1362118E22CF687F001081CA /* PinterestLayoutDelegate.swift in Sources */,
+				1362111E22CF2537001081CA /* AppDelegate.swift in Sources */,
+				1362116922CF2D10001081CA /* PhotosDetails.swift in Sources */,
+				1362118F22CF687F001081CA /* PinterestLayoutAttributes.swift in Sources */,
+				1362116B22CF2D10001081CA /* ImageAssets.swift in Sources */,
+				1362117622CF3396001081CA /* SearchImageRepository.swift in Sources */,
+				1362114D22CF266E001081CA /* HttpRouter.swift in Sources */,
+				1362115222CF2681001081CA /* ReachabilityManager.swift in Sources */,
+				1362116D22CF2D10001081CA /* ImagePreview.swift in Sources */,
+				1362118D22CF687F001081CA /* PinterestLayout.swift in Sources */,
+				1362115322CF2681001081CA /* RequestLogger.swift in Sources */,
+				1362117822CF33A2001081CA /* SearchImageDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1362112A22CF2539001081CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1362113322CF2539001081CA /* ShutterstockAPIAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1362113522CF2539001081CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1362113E22CF2539001081CA /* ShutterstockAPIAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1362113022CF2539001081CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1362111922CF2536001081CA /* ShutterstockAPIApp */;
+			targetProxy = 1362112F22CF2539001081CA /* PBXContainerItemProxy */;
+		};
+		1362113B22CF2539001081CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1362111922CF2536001081CA /* ShutterstockAPIApp */;
+			targetProxy = 1362113A22CF2539001081CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1362112122CF2537001081CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1362112222CF2537001081CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1362112622CF2539001081CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1362112722CF2539001081CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1362114022CF2539001081CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1362114122CF2539001081CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1362114322CF2539001081CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B8EDCBB15884BE82765003 /* Pods-ShutterstockAPIApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF54KVHWKT;
+				INFOPLIST_FILE = ShutterstockAPIApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nishant.ShutterstockAPIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1362114422CF2539001081CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 056AE5CFF3AEE6F7D15E1C7A /* Pods-ShutterstockAPIApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF54KVHWKT;
+				INFOPLIST_FILE = ShutterstockAPIApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nishant.ShutterstockAPIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1362114622CF2539001081CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28891CCFEE4DAFD195927D95 /* Pods-ShutterstockAPIAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShutterstockAPIAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nishant.ShutterstockAPIAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShutterstockAPIApp.app/ShutterstockAPIApp";
+			};
+			name = Debug;
+		};
+		1362114722CF2539001081CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73E429DDD67F5413F7B917DF /* Pods-ShutterstockAPIAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShutterstockAPIAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nishant.ShutterstockAPIAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShutterstockAPIApp.app/ShutterstockAPIApp";
+			};
+			name = Release;
+		};
+		1362114922CF2539001081CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74730C41ABF9CAA540607A6 /* Pods-ShutterstockAPIAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShutterstockAPIAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nishant.ShutterstockAPIAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShutterstockAPIApp;
+			};
+			name = Debug;
+		};
+		1362114A22CF2539001081CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20271476D80E60B7DDD10698 /* Pods-ShutterstockAPIAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShutterstockAPIAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nishant.ShutterstockAPIAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShutterstockAPIApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1362111522CF2536001081CA /* Build configuration list for PBXProject "ShutterstockAPIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1362114022CF2539001081CA /* Debug */,
+				1362114122CF2539001081CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1362114222CF2539001081CA /* Build configuration list for PBXNativeTarget "ShutterstockAPIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1362114322CF2539001081CA /* Debug */,
+				1362114422CF2539001081CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1362114522CF2539001081CA /* Build configuration list for PBXNativeTarget "ShutterstockAPIAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1362114622CF2539001081CA /* Debug */,
+				1362114722CF2539001081CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1362114822CF2539001081CA /* Build configuration list for PBXNativeTarget "ShutterstockAPIAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1362114922CF2539001081CA /* Debug */,
+				1362114A22CF2539001081CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1362111222CF2536001081CA /* Project object */;
+}
